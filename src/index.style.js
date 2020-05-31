@@ -10,7 +10,7 @@ const Wrapper = styled.div`
       no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
 `;
 
 export { Wrapper };
