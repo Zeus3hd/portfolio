@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Wrapper,
-  ScoreBar,
-  ScoreGroup,
   Name,
   BioText,
   OldManText,
@@ -14,24 +12,11 @@ import oldMan from "../../imgs/oldman.png";
 import monitorImg from "../../imgs/codeinmonitor.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-
+import ScoreBar from "../ScoreBar";
 const Bio = () => {
   return (
     <Wrapper>
-      <ScoreBar>
-        <ScoreGroup>
-          <p>Score</p>
-          <p>000000</p>
-        </ScoreGroup>
-        <ScoreGroup>
-          <p>World</p>
-          <p>1-1</p>
-        </ScoreGroup>
-        <ScoreGroup>
-          <p>Time</p>
-          <p>0000000</p>
-        </ScoreGroup>
-      </ScoreBar>
+      <ScoreBar />
       <Name>Player: Ahd Hani Radwan</Name>
       <BioText>
         Passionate Software Developer Curios, and always on the lookout for new

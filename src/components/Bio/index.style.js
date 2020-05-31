@@ -13,18 +13,6 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const ScoreBar = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  color: ${colors.white};
-  font-size: 0.65rem;
-  justify-content: space-between;
-  text-align: center;
-`;
-const ScoreGroup = styled.div``;
-
 const Name = styled.p`
   color: ${colors.red};
   margin: 0;
@@ -89,8 +77,6 @@ export {
   OldManImg,
   OldManText,
   Wrapper,
-  ScoreBar,
-  ScoreGroup,
   Name,
   BioText,
   SkillsLink,
