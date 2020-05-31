@@ -16,7 +16,7 @@ import ScoreBar from "../ScoreBar";
 const Bio = () => {
   return (
     <Wrapper>
-      <ScoreBar />
+      <ScoreBar world="1-1" />
       <Name>Player: Ahd Hani Radwan</Name>
       <BioText>
         Passionate Software Developer Curios, and always on the lookout for new

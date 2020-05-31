@@ -1,6 +1,6 @@
 import React from "react";
 import { ScoreBarCom, ScoreGroup } from "./index.style";
-const ScoreBar = () => {
+const ScoreBar = ({ world }) => {
   return (
     <ScoreBarCom>
       <ScoreGroup>
@@ -9,7 +9,7 @@ const ScoreBar = () => {
       </ScoreGroup>
       <ScoreGroup>
         <p>World</p>
-        <p>1-1</p>
+        <p>{world}</p>
       </ScoreGroup>
       <ScoreGroup>
         <p>Time</p>
