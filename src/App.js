@@ -2,18 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WelcomeScreen from "./components/WelcomeScreen";
 import BottomButtons from "./components/BottomButtons";
-import TitleScreen from "./components/TitleScreen";
+import { Wrapper } from "./index.style";
+import vhsImg from "./imgs/vhs.jpg";
 import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <Wrapper className="App" bg={vhsImg}>
         <Switch>
           <Route exact path="/" component={WelcomeScreen} />
-          <Route exact path="/title" component={TitleScreen} />
         </Switch>
         <BottomButtons />
-      </div>
+      </Wrapper>
     </Router>
   );
 }

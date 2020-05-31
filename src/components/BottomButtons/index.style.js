@@ -5,12 +5,13 @@ const colors = {
   green: "#05FF00",
 };
 const IconsWrapper = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 500px;
 `;
 const IconButton = styled.button`
   background: transparent;
