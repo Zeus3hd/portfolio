@@ -61,10 +61,8 @@ const Skills = () => {
         </List>
       </ListWrapper>
 
-      <ProjectsLink href="#deadsies">
-        Press Here to Conquer Projects
-      </ProjectsLink>
-      <BackLink href="#deadsies">Go Back</BackLink>
+      <ProjectsLink to="/projects">Press Here to Conquer Projects</ProjectsLink>
+      <BackLink to="/bio">Go Back</BackLink>
     </Wrapper>
   );
 };

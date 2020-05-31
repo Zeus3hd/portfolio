@@ -25,7 +25,7 @@ const Bio = () => {
       <OldManText>IT’S DANGEROUS TO GO ALONE! tAKE THIS..</OldManText>
       <OldManImg src={oldMan} alt="Old Man" />
       <MonitorIcon src={monitorImg} alt="Monitor" />
-      <SkillsLink href="#deadsies">
+      <SkillsLink to="/skills">
         <FontAwesomeIcon icon={faCaretRight} /> Click Here To Begin The
         Adventure
       </SkillsLink>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const colors = {
   white: "#ffffff",
   red: "#FF0000",
@@ -59,7 +59,7 @@ const MonitorIcon = styled.img`
   }
 `;
 
-const SkillsLink = styled.a`
+const SkillsLink = styled(Link)`
   font-size: 0.6rem;
   text-align: center;
   color: ${colors.white};

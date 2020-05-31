@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const colors = {
   white: "#ffffff",
   red: "#FF0000",
@@ -44,7 +44,7 @@ const ListItem = styled.li`
   }
 `;
 
-const ProjectsLink = styled.a`
+const ProjectsLink = styled(Link)`
   font-size: 0.7rem;
   text-align: center;
   margin: 1.5rem 0;
@@ -52,7 +52,7 @@ const ProjectsLink = styled.a`
   text-decoration: none;
 `;
 
-const BackLink = styled.a`
+const BackLink = styled(Link)`
   font-size: 0.7rem;
   text-align: center;
   margin: 1.5rem 0;
