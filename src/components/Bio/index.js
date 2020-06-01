@@ -12,11 +12,9 @@ import oldMan from "../../imgs/oldman.png";
 import monitorImg from "../../imgs/codeinmonitor.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import ScoreBar from "../ScoreBar";
 const Bio = () => {
   return (
     <Wrapper>
-      <ScoreBar world="1-1" />
       <Name>Player: Ahd Hani Radwan</Name>
       <BioText>
         Passionate Software Developer Curios, and always on the lookout for new

@@ -1,5 +1,4 @@
 import React from "react";
-import ScoreBar from "../ScoreBar";
 import {
   BackLink,
   Wrapper,
@@ -10,7 +9,6 @@ import {
 const Projects = () => {
   return (
     <Wrapper>
-      <ScoreBar world="3-1" />
       <ProjectLink to="/purple">
         <ProjectTitle>Purple</ProjectTitle>
         <ProjectDesc>Sell, Buy and Hire - Mobile App</ProjectDesc>

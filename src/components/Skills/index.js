@@ -8,11 +8,9 @@ import {
   ListItem,
   BackLink,
 } from "./index.style";
-import ScoreBar from "../ScoreBar";
 const Skills = () => {
   return (
     <Wrapper>
-      <ScoreBar world="2-1" />
       <HeadLine>Web Development:</HeadLine>
       <ListWrapper>
         <List>

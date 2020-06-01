@@ -7,11 +7,13 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { Wrapper } from "./index.style";
 import vhsImg from "./imgs/vhs.jpg";
+import ScoreBar from "./components/ScoreBar";
 import "./App.css";
 function App() {
   return (
     <Router>
       <Wrapper className="App" bg={vhsImg}>
+        <ScoreBar />
         <Switch>
           <Route exact path="/" component={WelcomeScreen} />
           <Route exact path="/bio" component={Bio} />
