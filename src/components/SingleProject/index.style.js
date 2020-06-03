@@ -20,11 +20,13 @@ const Green = styled.p`
   color: ${colors.green};
   text-align: center;
   font-size: 0.7rem;
+  line-height: 1.3rem;
 `;
 const White = styled.p`
   color: ${colors.white};
   text-align: center;
   font-size: 0.7rem;
+  line-height: 1.3rem;
 `;
 
 const ProjectImg = styled.div`
@@ -58,4 +60,37 @@ const BackLink = styled(Link)`
   font-size: 0.7rem;
   margin: 2rem 0;
 `;
-export { Wrapper, Green, ProjectImg, White, TechsList, ListItem, BackLink };
+
+const ProjectLink = styled.a`
+  text-decoration: none;
+  color: ${colors.white};
+  font-size: 0.6rem;
+  position: relative;
+  padding: 0 0.7rem;
+  &:hover {
+    color: ${colors.green};
+    cursor: pointer;
+    &::before {
+      content: "- ";
+      position: absolute;
+      left: 0;
+    }
+  }
+`;
+const ProjectLinkContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 1.5rem;
+`;
+export {
+  ProjectLink,
+  Wrapper,
+  Green,
+  ProjectImg,
+  White,
+  TechsList,
+  ListItem,
+  BackLink,
+  ProjectLinkContainer,
+};

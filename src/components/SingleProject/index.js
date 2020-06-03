@@ -7,6 +7,8 @@ import {
   TechsList,
   ListItem,
   BackLink,
+  ProjectLink,
+  ProjectLinkContainer,
 } from "./index.style";
 import { useParams } from "react-router-dom";
 const projects = {
@@ -88,6 +90,10 @@ const SingleProject = () => {
           <ListItem key={tech}>{tech}</ListItem>
         ))}
       </TechsList>
+      <ProjectLinkContainer>
+        <ProjectLink>Code on Github</ProjectLink>
+        <ProjectLink>View App/Website</ProjectLink>
+      </ProjectLinkContainer>
       <BackLink to="/projects">Go Back</BackLink>
     </Wrapper>
   );
