@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import { Wrapper } from "./index.style";
 import vhsImg from "./imgs/vhs.jpg";
 import ScoreBar from "./components/ScoreBar";
+import SingleProject from "./components/SingleProject";
 import "./App.css";
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
           <Route exact path="/bio" component={Bio} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/projects" component={Projects} />
+          <Route
+            exact
+            path="/projects/:id"
+            component={() => <SingleProject />}
+          />
         </Switch>
         <BottomButtons />
       </Wrapper>

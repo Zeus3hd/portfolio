@@ -9,31 +9,31 @@ import {
 const Projects = () => {
   return (
     <Wrapper>
-      <ProjectLink to="/purple">
+      <ProjectLink to="/projects/purple">
         <ProjectTitle>Purple</ProjectTitle>
         <ProjectDesc>Sell, Buy and Hire - Mobile App</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/myturkeyproperty">
+      <ProjectLink to="/projects/myturkeyproperty">
         <ProjectTitle>My Turkey Property</ProjectTitle>
         <ProjectDesc>Real Estate - Website</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/myturkeyproperty">
+      <ProjectLink to="/projects/myturkeypropertymobile">
         <ProjectTitle>My Turkey Property</ProjectTitle>
         <ProjectDesc>Real Estate - Mobile App</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/myturkeyproperty">
+      <ProjectLink to="/projects/elegantlady">
         <ProjectTitle>Elegant Lady</ProjectTitle>
         <ProjectDesc>Online Fashion Store - website</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/myturkeyproperty">
+      <ProjectLink to="/projects/elegantladymobile">
         <ProjectTitle>Elegant Lady</ProjectTitle>
         <ProjectDesc>Online Fashion Store - Mobile App</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/myturkeyproperty">
+      <ProjectLink to="/projects/portfolio">
         <ProjectTitle>Portfolio</ProjectTitle>
         <ProjectDesc>My Personal Portfolio - Website</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/myturkeyproperty">
+      <ProjectLink to="/projects/portfoliomobile">
         <ProjectTitle>Portfolio</ProjectTitle>
         <ProjectDesc>My Personal Portfolio - Mobile App</ProjectDesc>
       </ProjectLink>
