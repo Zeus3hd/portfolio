@@ -1,6 +1,7 @@
 import React from "react";
 import { Wrapper } from "./index.style";
 import Keyboard from "react-mk";
+import { Link } from "react-router-dom";
 
 const WelcomeScreen = () => {
   return (
@@ -40,40 +41,31 @@ const WelcomeScreen = () => {
           {({ type }) => type(2800, "I'm a Mobile And Web Developer.")}
         </Keyboard>
       </p>
-
-      <p className="third">
-        <Keyboard
-          sentenceDelayPerCharRange={[0, 0]}
-          keyPressDelayRange={[50, 70]}
-        >
-          {({ type }) => type(5500, "Please, Select Mode:")}
-        </Keyboard>
-      </p>
       <br />
-      <p className="green">
+      <Link to="/bio" className="green">
         <Keyboard
           sentenceDelayPerCharRange={[0, 0]}
           keyPressDelayRange={[50, 70]}
         >
-          {({ type }) => type(7000, "Interactive & Hacky View")}
+          {({ type }) => type(6000, "Press To Start")}
         </Keyboard>
-      </p>
-      <p>
+      </Link>
+      {/* <p>
         <Keyboard
           sentenceDelayPerCharRange={[0, 0]}
           keyPressDelayRange={[50, 70]}
         >
           {({ type }) => type(9000, "OR")}
         </Keyboard>
-      </p>
-      <p className="green">
+      </p> */}
+      {/* <p className="green">
         <Keyboard
           sentenceDelayPerCharRange={[0, 0]}
           keyPressDelayRange={[50, 70]}
         >
           {({ type }) => type(10000, "Simple & Quick View")}
         </Keyboard>
-      </p>
+      </p> */}
     </Wrapper>
   );
 };

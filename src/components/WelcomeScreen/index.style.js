@@ -26,6 +26,7 @@ const Wrapper = styled.div`
   }
   .green {
     color: ${colors.green};
+    text-decoration: none;
   }
 `;
 

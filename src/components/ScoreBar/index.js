@@ -5,6 +5,7 @@ const ScoreBar = () => {
   const [seconds, setSeconds] = useState(0);
   const [world, setWorld] = useState("0-0");
   const [isActive, setIsActive] = useState(true);
+  // eslint-disable-next-line
   function toggle() {
     setIsActive(!isActive);
   }
@@ -19,10 +20,6 @@ const ScoreBar = () => {
     } else if (!isActive && seconds !== 0) {
       clearInterval(interval);
     }
-    return () => clearInterval(interval);
-  }, [isActive, seconds]);
-
-  useEffect(() => {
     if (loc.pathname === "/bio") {
       setWorld("1-1");
     } else if (loc.pathname === "/skills") {
@@ -30,7 +27,10 @@ const ScoreBar = () => {
     } else if (loc.pathname === "/projects") {
       setWorld("3-1");
     }
-  }, []);
+    return () => clearInterval(interval);
+  }, [isActive, seconds, loc.pathname]);
+
+  useEffect(() => {}, []);
   return (
     <ScoreBarCom>
       <ScoreGroup>
