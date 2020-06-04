@@ -10,13 +10,14 @@ const IconsWrapper = styled.div`
   width: 100%;
   max-width: 500px;
 `;
-const IconButton = styled.button`
+const IconButton = styled.a`
   background: transparent;
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   svg {
     fill: ${colors.white};
     width: 30px;
