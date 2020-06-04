@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { ScoreBarCom, ScoreGroup } from "./index.style";
+import {
+  ScoreBarCom,
+  ScoreGroup,
+  HeartsContainer,
+  HeartImg,
+} from "./index.style";
 import { useLocation } from "react-router-dom";
+import heart from "../../imgs/heart2.png";
+
 const ScoreBar = () => {
   const [seconds, setSeconds] = useState(0);
   const [world, setWorld] = useState("0-0");
@@ -33,9 +40,15 @@ const ScoreBar = () => {
   useEffect(() => {}, []);
   return (
     <ScoreBarCom>
+      <HeartsContainer>
+        <p>Life</p>
+        <HeartImg src={heart} />
+        <HeartImg src={heart} />
+        <HeartImg src={heart} />
+      </HeartsContainer>
       <ScoreGroup>
         <p>Score</p>
-        <p>{seconds * 10}</p>
+        <p>{seconds * 6}</p>
       </ScoreGroup>
       <ScoreGroup>
         <p>World</p>

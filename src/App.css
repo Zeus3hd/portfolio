@@ -1,5 +1,7 @@
 .App {
-  min-height: 90vh;
+  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
-  padding: 1rem;
+  padding: 0.7rem;
+  box-sizing: border-box;
 }

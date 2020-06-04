@@ -15,5 +15,9 @@ const ScoreBarCom = styled.div`
   text-align: center;
 `;
 const ScoreGroup = styled.div``;
-
-export { ScoreBarCom, ScoreGroup };
+const HeartsContainer = styled.div``;
+const HeartImg = styled.img`
+  width: 20px;
+  margin: 0 2px;
+`;
+export { ScoreBarCom, ScoreGroup, HeartsContainer, HeartImg };
