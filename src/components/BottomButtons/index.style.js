@@ -5,9 +5,6 @@ const colors = {
   green: "#05FF00",
 };
 const IconsWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;

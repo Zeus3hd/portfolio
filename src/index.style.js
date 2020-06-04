@@ -11,6 +11,9 @@ const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export { Wrapper };

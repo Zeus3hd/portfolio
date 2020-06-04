@@ -7,8 +7,6 @@ const colors = {
 };
 
 const ScoreBarCom = styled.div`
-  position: absolute;
-  top: 0;
   width: 100%;
   display: flex;
   color: ${colors.white};
