@@ -33,10 +33,7 @@ const Projects = () => {
         <ProjectTitle>Portfolio</ProjectTitle>
         <ProjectDesc>My Personal Portfolio - Website</ProjectDesc>
       </ProjectLink>
-      <ProjectLink to="/projects/portfoliomobile">
-        <ProjectTitle>Portfolio</ProjectTitle>
-        <ProjectDesc>My Personal Portfolio - Mobile App</ProjectDesc>
-      </ProjectLink>
+
       <BackLink to="/bio">Go Back</BackLink>
     </Wrapper>
   );

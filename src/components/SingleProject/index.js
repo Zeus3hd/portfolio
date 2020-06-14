@@ -15,7 +15,8 @@ const projects = {
   purple: {
     title: "Purple",
     subtitle: "Buy, Sell and Hire - Mobile App",
-    imgurl: "https://picsum.photos/600/800",
+    imgurl:
+      "https://res.cloudinary.com/ahd3hd/image/upload/v1592164790/portfolio/_20200614_225359.png",
     desc: "Mobile App for sharing items for sale, or offer jobs or services.",
     techs: ["Flutter / Dart", "Firebase SDK"],
     github: "https://github.com/Zeus3hd/purpleapp",
@@ -24,7 +25,8 @@ const projects = {
   myturkeyproperty: {
     title: "My turkey Property",
     subtitle: "Real Estate - Website",
-    imgurl: "https://picsum.photos/600/800",
+    imgurl:
+      "https://res.cloudinary.com/ahd3hd/image/upload/v1592165020/portfolio/myturkeyproperty-website.png",
     desc: "Website for a real estate agency for listing properies",
     techs: ["WordPress", "HTML", "SASS/CSS", "JavaScript", "JQuery"],
     github: "notyet",
@@ -33,7 +35,8 @@ const projects = {
   myturkeypropertymobile: {
     title: "My turkey Property",
     subtitle: "Real Estate - Mobile App",
-    imgurl: "https://picsum.photos/600/800",
+    imgurl:
+      "https://res.cloudinary.com/ahd3hd/image/upload/v1592164809/portfolio/_20200614_225546.png",
     desc: "Mobile for a real estate agency for listing properies",
     techs: ["Flutter / Dart", "WordPress RestAPI"],
     github: "https://github.com/Zeus3hd/turkeyapp",
@@ -42,7 +45,8 @@ const projects = {
   elegantlady: {
     title: "Elegant Lady",
     subtitle: "Fashion Store - website",
-    imgurl: "https://picsum.photos/600/800",
+    imgurl:
+      "https://res.cloudinary.com/ahd3hd/image/upload/v1592165167/portfolio/Screenshot-20200614230551-1906x1016.png",
     desc: "Fashion Online Store for listing a fashion's store products",
     techs: [
       "ReactJS",
@@ -58,7 +62,8 @@ const projects = {
   elegantladymobile: {
     title: "Elegant Lady",
     subtitle: "Fashion Store - Mobile App",
-    imgurl: "https://picsum.photos/600/800",
+    imgurl:
+      "https://res.cloudinary.com/ahd3hd/image/upload/v1592164825/portfolio/_20200614_225618.png",
     desc: "Fashion Online Store for listing a fashion's store products",
     techs: [
       "Flutter / Dart",
@@ -73,20 +78,12 @@ const projects = {
   portfolio: {
     title: "Portfolio",
     subtitle: "My Personal Portfolio - Website",
-    imgurl: "https://picsum.photos/600/800",
+    imgurl:
+      "https://res.cloudinary.com/ahd3hd/image/upload/v1592165025/portfolio/Screenshot-20200614230318-378x815.png",
     desc: "My personal portfolio mimicing the style of retro video games.",
     techs: ["ReactJS", "Styled-Components / SASS / CSS"],
     github: "https://github.com/Zeus3hd/portfolio",
     link: "https://ahdev.now.sh/",
-  },
-  portfoliomobile: {
-    title: "Portfolio",
-    subtitle: "My Personal Portfolio - Mobile App",
-    imgurl: "https://picsum.photos/600/800",
-    desc: "My personal portfolio mimicing the style of retro video games.",
-    techs: ["Flutter / Dart"],
-    github: "notyet",
-    link: "notyet",
   },
 };
 const SingleProject = () => {
