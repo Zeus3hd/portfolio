@@ -3,7 +3,7 @@ import { IconButton, IconsWrapper } from "./index.style";
 const BottomButtons = () => {
   return (
     <IconsWrapper>
-      <IconButton>
+      <IconButton href="https://docs.google.com/document/d/1wfcfmxxqJ-s0QQjXXkj19u4q7C4pz_kMEusxi196EVg/edit?usp=sharing">
         <svg viewBox="0 0 512 512">
           <defs />
           <path d="M196 90c-16.538 0-31 13.462-31 30s14.462 30 31 30 31-13.462 31-30-14.462-30-31-30zM85.605 13.184L13.184 85.605c-1.359 1.359-2.45 2.9-3.611 4.395H90V9.571c-1.494 1.161-3.036 2.254-4.395 3.613zM196 180c-41.353 0-76 35.647-76 77v15h152v-15c0-41.353-34.647-77-76-77z" />
