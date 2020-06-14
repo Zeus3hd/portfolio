@@ -11,6 +11,14 @@ const WelcomeScreen = () => {
           sentenceDelayPerCharRange={[0, 0]}
           keyPressDelayRange={[50, 70]}
         >
+          {({ type }) => type(1000, "Work in Progress, جاري تحديث الموقع")}
+        </Keyboard>
+      </p>
+      <p className="first">
+        <Keyboard
+          sentenceDelayPerCharRange={[0, 0]}
+          keyPressDelayRange={[50, 70]}
+        >
           {({ type }) => type(1000, "Hi")}
         </Keyboard>
       </p>
