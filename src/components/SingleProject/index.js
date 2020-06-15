@@ -108,7 +108,7 @@ const SingleProject = () => {
     <Wrapper>
       <Green>{data.title}</Green>
       <Green>{data.subtitle}</Green>
-      <ProjectImg bg={data.imgurl} />
+      <ProjectImg bg={data.imgurl} href={data.imgurl} target="_blank" />
       <White>{data.desc}</White>
       <White>Techs Used:</White>
       <TechsList>

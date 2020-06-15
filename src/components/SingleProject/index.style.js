@@ -29,13 +29,14 @@ const White = styled.p`
   line-height: 1.3rem;
 `;
 
-const ProjectImg = styled.div`
-  background: url(${({ bg }) => bg});
+const ProjectImg = styled.a`
+  background: url(${({ bg }) => bg}) no-repeat;
+  background-position: center;
   height: 70vw;
   width: 70vw;
   max-width: 400px;
   max-height: 400px;
-  background-size: cover;
+  background-size: contain;
 `;
 
 const TechsList = styled.ul`
