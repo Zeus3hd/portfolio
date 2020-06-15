@@ -77,6 +77,23 @@ const ProjectLink = styled.a`
     }
   }
 `;
+
+const ProjectLinkVideo = styled(Link)`
+  text-decoration: none;
+  color: ${colors.white};
+  font-size: 0.6rem;
+  position: relative;
+  padding: 0 0.7rem;
+  &:hover {
+    color: ${colors.green};
+    cursor: pointer;
+    &::before {
+      content: "- ";
+      position: absolute;
+      left: 0;
+    }
+  }
+`;
 const ProjectLinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -93,4 +110,5 @@ export {
   ListItem,
   BackLink,
   ProjectLinkContainer,
+  ProjectLinkVideo,
 };

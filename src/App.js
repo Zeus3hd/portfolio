@@ -10,6 +10,7 @@ import vhsImg from "./imgs/vhs.jpg";
 import ScoreBar from "./components/ScoreBar";
 import SingleProject from "./components/SingleProject";
 import "./App.css";
+import VideoPage from "./components/VideoPage";
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
             path="/projects/:id"
             component={() => <SingleProject />}
           />
+          <Route exact path="/video/:linkid" component={VideoPage} />
         </Switch>
         <BottomButtons />
       </Wrapper>

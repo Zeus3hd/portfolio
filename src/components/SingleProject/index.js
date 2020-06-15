@@ -9,6 +9,7 @@ import {
   BackLink,
   ProjectLink,
   ProjectLinkContainer,
+  ProjectLinkVideo,
 } from "./index.style";
 import { useParams } from "react-router-dom";
 const projects = {
@@ -20,7 +21,10 @@ const projects = {
     desc: "Mobile App for sharing items for sale, or offer jobs or services.",
     techs: ["Flutter / Dart", "Firebase SDK"],
     github: "https://github.com/Zeus3hd/purpleapp",
-    link: "notyet",
+    link:
+      "https://res.cloudinary.com/ahd3hd/video/upload/v1592165508/portfolio/Screen-20200614-221240.mp4",
+    linkid: "purple",
+    type: "mobile",
   },
   myturkeyproperty: {
     title: "My turkey Property",
@@ -31,6 +35,7 @@ const projects = {
     techs: ["WordPress", "HTML", "SASS/CSS", "JavaScript", "JQuery"],
     github: "notyet",
     link: "https://myturkeyproperty.com/en/",
+    type: "website",
   },
   myturkeypropertymobile: {
     title: "My turkey Property",
@@ -40,7 +45,11 @@ const projects = {
     desc: "Mobile for a real estate agency for listing properies",
     techs: ["Flutter / Dart", "WordPress RestAPI"],
     github: "https://github.com/Zeus3hd/turkeyapp",
-    link: "notyet",
+    link:
+      "https://res.cloudinary.com/ahd3hd/video/upload/v1592165794/portfolio/Screen-20200614-221703.mp4",
+    linkid: "turkey",
+
+    type: "mobile",
   },
   elegantlady: {
     title: "Elegant Lady",
@@ -58,6 +67,7 @@ const projects = {
     ],
     github: "https://github.com/Zeus3hd/fashfe",
     link: "https://fashfe-gjam0aovf.now.sh/",
+    type: "website",
   },
   elegantladymobile: {
     title: "Elegant Lady",
@@ -73,7 +83,11 @@ const projects = {
       "JavaScript",
     ],
     github: "https://github.com/Zeus3hd/fashionflutter",
-    link: "notyet",
+    link:
+      "https://res.cloudinary.com/ahd3hd/video/upload/v1592165680/portfolio/Screen-20200614-223035.mp4",
+    linkid: "elegant",
+
+    type: "mobile",
   },
   portfolio: {
     title: "Portfolio",
@@ -84,6 +98,7 @@ const projects = {
     techs: ["ReactJS", "Styled-Components / SASS / CSS"],
     github: "https://github.com/Zeus3hd/portfolio",
     link: "https://ahdev.now.sh/",
+    type: "website",
   },
 };
 const SingleProject = () => {
@@ -105,9 +120,15 @@ const SingleProject = () => {
         <ProjectLink href={data.github} target="_blank">
           Code on Github
         </ProjectLink>
-        <ProjectLink href={data.link} target="_blank">
-          View App/Website
-        </ProjectLink>
+        {data.type === "website" ? (
+          <ProjectLink href={data.link} target="_blank">
+            View App/Website
+          </ProjectLink>
+        ) : (
+          <ProjectLinkVideo to={`/video/${data.linkid}`}>
+            View App/Website
+          </ProjectLinkVideo>
+        )}
       </ProjectLinkContainer>
       <BackLink to="/projects">Go Back</BackLink>
     </Wrapper>
